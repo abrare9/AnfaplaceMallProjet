@@ -1,0 +1,67 @@
+td { 
+    text-align: center; 
+    vertical-align: middle; 
+} 
+.li-style{
+    background-color: #303189 !important;
+}
+.text-white{
+    color: rgb(255, 255, 255)  !important;
+    font-weight: bold;
+} 
+img {
+	max-width: 100%;
+}
+p{
+    color: rgb(255, 255, 255)  !important;
+    font-weight: 400;
+}
+.titlesclass { 
+    font-size: 30px;
+    color: #303189;
+    font-weight: bold;
+    text-align:center;
+}
+h1 {
+    font-weight: bold;
+}
+.material-icons {
+   font-size: 17px;
+}
+.nav{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.top-buffer {
+  margin-top:25px; 
+}
+.textNavBar {
+    font-family: 'roboto';
+    font-weight: 400;
+}
+.btn-lg{
+    background-color: #303189;
+    font-size: medium;
+    font-weight: bold;
+    padding: 0.7rem 1.9rem;
+}
+.btn-light{
+    background-color: #ffffff;
+    color:#303189 ;
+    font-weight: bold;
+    font-size: medium;
+}
+.carousel-item {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.textsize{
+    font-size: 14px;
+}
+h5{
+    font-weight: bold;
+    color:#303189;
+}
+
+
+
