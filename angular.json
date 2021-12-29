@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "material-dashboard-angular": {
+    "anfaPlaceMall": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -11,14 +11,19 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/anfaPlaceMall",
             "index": "src/index.html",
             "main": "src/main.ts",
             "tsConfig": "src/tsconfig.app.json",
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/favicon.ico"
+              "src/favicon.ico",
+              {
+                "glob": "_redirects",
+                "input": "src",
+                "output": "/"
+              }
             ],
             "styles": [
               "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
@@ -83,14 +88,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "material-dashboard-angular:build"
+            "browserTarget": "anfaPlaceMall:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "material-dashboard-angular:build:production"
+              "browserTarget": "anfaPlaceMall:build:production"
             },
             "development": {
-              "browserTarget": "material-dashboard-angular:build:development"
+              "browserTarget": "anfaPlaceMall:build:development"
             }
           },
           "defaultConfiguration": "production"
@@ -98,7 +103,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "material-dashboard-angular:build"
+            "browserTarget": "anfaPlaceMall:build"
           }
         },
         "test": {
@@ -141,7 +146,7 @@
         }
       }
     },
-    "material-dashboard-angular-e2e": {
+    "anfaPlaceMall-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -150,7 +155,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "material-dashboard-angular:serve"
+            "devServerTarget": "anfaPlaceMall:serve"
           }
         },
         "lint": {
@@ -165,7 +170,7 @@
       }
     }
   },
-  "defaultProject": "material-dashboard-angular",
+  "defaultProject": "anfaPlaceMall",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
